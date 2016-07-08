@@ -16,7 +16,12 @@
  */
 // write your code here
 
+var daysOfTheWeek: [String] = ["Monday", "Tuesday", "Wednsday", "Thursday", "Friday"]
 
+for day in daysOfTheWeek.enumerate() {
+    
+    print(day)
+}
 
 
 
@@ -27,7 +32,13 @@
  */
 // write your code here
 
+let numDaysOfWeek: [String] = ["Monday", "Tuesday", "Wednsday", "Thursday", "friday"]
 
+for (index, day) in numDaysOfWeek.enumerate() {
+    
+    print("\(index + 1). \(day)")
+    
+}
 
 
 
@@ -38,7 +49,13 @@
  */
 // write your code here
 
+var emptyarray: [Int] = []
 
+if emptyarray.isEmpty {
+    print("Array is empty")
+} else {
+    print("Array is not empty")
+}
 
 
 
@@ -50,7 +67,13 @@
  */
 // write your code here
 
+var reverseEmptyarray: [String] = []
 
+if !reverseEmptyarray.isEmpty {
+    print("Array is not empty")
+} else {
+    print("Array is empty")
+}
 
 
 
@@ -63,7 +86,7 @@
  */
 // write your code here
 
-
+print(daysOfTheWeek.count)
 
 
 
@@ -76,7 +99,12 @@
 // write your code here
 
 
+daysOfTheWeek.insert("Saturday", atIndex: 5)
+daysOfTheWeek.insert("Sunday", atIndex: 6)
 
+for days in daysOfTheWeek {
+    print(days)
+}
 
 
 
@@ -84,10 +112,12 @@
 /*: question7
  ### 7. Some people start the week on a Sunday. Remove Sunday from the end of the 'daysOfTheWeek' array and then re-add it to the beginning of the array.
  */
+
 // write your code here
 
 
-
+daysOfTheWeek.removeLast()
+daysOfTheWeek.insert("Sunday", atIndex: 0)
 
 
 
@@ -98,7 +128,10 @@
  */
 // write your code here
 
-
+for days in daysOfTheWeek {
+    
+    print(days.lowercaseString)
+}
 
 
 
@@ -110,7 +143,10 @@
  */
 // write your code here
 
-
+if daysOfTheWeek.count > 5 {
+    
+    daysOfTheWeek.removeAtIndex(6)
+}
 
 
 
